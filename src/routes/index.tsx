@@ -28,52 +28,84 @@ function Home() {
   return (
     <div>
       {/* HERO */}
-      <section className="relative min-h-screen border-b">
-        <div className="mx-auto grid max-w-[1600px] grid-cols-1 items-end gap-8 px-5 pb-14 pt-32 md:grid-cols-12 md:gap-10 md:px-10 md:pb-16 md:pt-40">
-          <div className="md:col-span-7">
-            <p className="meta">Ahmedabad, India · Since 2020</p>
-            <h1 className="display mt-6 text-[17vw] leading-[0.85] md:text-[9.5vw]">
-              Satyam
-              <br />
-              <span className="text-olive">Chaudhary</span>
-            </h1>
-            <p className="mt-8 max-w-md text-sm leading-relaxed text-muted-foreground">
-              Filmmaker · Photographer · Creative Director · Writer
-            </p>
-            <p className="display mt-6 max-w-xl text-2xl leading-tight md:text-3xl">
-              “I create beautiful things through images, stories, and human expression.”
-            </p>
-            <div className="mt-10 flex flex-wrap items-center gap-6">
-              <Link
-                to="/work"
-                className="meta rounded-full bg-foreground px-6 py-3 text-background transition-opacity hover:opacity-85"
-              >
-                Selected Work
-              </Link>
-              <Link to="/contact" className="meta rule-link text-foreground">
-                Let's Create
-              </Link>
-            </div>
+      <section className="relative flex min-h-screen items-center border-b">
+        <div className="mx-auto grid w-full max-w-[1600px] grid-cols-1 items-center gap-12 px-5 pb-20 pt-32 md:grid-cols-12 md:gap-8 md:px-10 md:pb-24 md:pt-40">
+          {/* Left narrative column */}
+          <div className="relative z-10 md:col-span-7">
+            <Reveal>
+              <div className="flex items-center gap-4">
+                <span className="h-px w-8 bg-accent" />
+                <p className="meta text-olive">Ahmedabad, India · Since 2020</p>
+              </div>
+              <h1 className="display mt-6 text-[19vw] leading-[0.8] tracking-tight md:text-[9.5vw]">
+                Satyam
+                <br />
+                <span className="ml-8 italic text-olive md:ml-16">Chaudhary</span>
+              </h1>
+            </Reveal>
+
+            <Reveal delay={140}>
+              <div className="mt-12 max-w-md space-y-8">
+                <div className="space-y-4">
+                  <p className="meta">
+                    Filmmaker · Photographer · Creative Director · Writer
+                  </p>
+                  <p className="display text-2xl italic leading-snug text-muted-foreground md:text-3xl">
+                    “I create beautiful things through images, stories, and human expression.”
+                  </p>
+                </div>
+
+                <div className="flex flex-wrap gap-4 pt-2">
+                  <Link
+                    to="/work"
+                    className="group relative overflow-hidden bg-olive px-8 py-4"
+                  >
+                    <span className="meta relative z-10 text-background">Selected Work</span>
+                    <span className="absolute inset-0 translate-y-full bg-bark transition-transform duration-300 group-hover:translate-y-0" />
+                  </Link>
+                  <Link
+                    to="/contact"
+                    className="meta border border-foreground/20 px-8 py-4 text-foreground transition-colors duration-300 hover:bg-foreground hover:text-background"
+                  >
+                    Let's Create
+                  </Link>
+                </div>
+              </div>
+            </Reveal>
           </div>
 
-          <div className="grain relative md:col-span-5">
-            <img
-              src={portrait}
-              alt="Portrait of Satyam Chaudhary holding a film camera in warm window light"
-              width={1200}
-              height={1600}
-              className="img-cinema aspect-[3/4] w-full object-cover"
-            />
-            <p className="meta mt-3 flex justify-between">
-              <span>Fig. 01 — Self, with camera</span>
-              <span>35mm</span>
-            </p>
+          {/* Right visual column */}
+          <div className="relative md:col-span-5">
+            <Reveal delay={200}>
+              <div className="relative aspect-[4/5] w-full">
+                {/* Decorative accent frame */}
+                <div className="absolute -inset-4 -z-10 translate-x-2 translate-y-2 border border-accent/25" />
+
+                <div className="grain h-full w-full overflow-hidden shadow-2xl shadow-foreground/20">
+                  <img
+                    src={portrait}
+                    alt="Portrait of Satyam Chaudhary holding a film camera in warm window light"
+                    width={1200}
+                    height={1600}
+                    className="img-cinema h-full w-full object-cover"
+                  />
+                </div>
+
+                {/* Figure caption */}
+                <div className="absolute -bottom-6 -right-3 bg-ink px-5 py-3 md:-right-4">
+                  <p className="meta whitespace-nowrap text-background">
+                    <span className="mr-2 text-clay">Fig. 01</span> Self, with camera — 35mm
+                  </p>
+                </div>
+              </div>
+            </Reveal>
           </div>
         </div>
 
-        <div className="pointer-events-none absolute bottom-6 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 md:flex">
-          <span className="meta">Scroll</span>
-          <span className="block h-10 w-px animate-pulse bg-foreground/40" />
+        {/* Scroll indicator */}
+        <div className="pointer-events-none absolute bottom-8 left-5 hidden items-center gap-6 md:left-10 md:flex">
+          <span className="block h-px w-12 bg-olive/40" />
+          <span className="meta tracking-[0.5em] text-olive">Scroll To Explore</span>
         </div>
       </section>
 
