@@ -261,7 +261,6 @@ function Home() {
                 <figure className={`group relative ${i % 2 === 1 ? "md:translate-y-8" : ""}`}>
                   <div className="grain overflow-hidden">
                     <img
-                      <img
  src={src}
   alt="Street and documentary photograph by Satyam Chaudhary"
   loading="lazy"
