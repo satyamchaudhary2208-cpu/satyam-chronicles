@@ -262,7 +262,7 @@ function Home() {
                   <div className="grain overflow-hidden">
                     <img
                       <img
-  src={src}
+ src={src}
   alt="Street and documentary photograph by Satyam Chaudhary"
   loading="lazy"
   className="img-cinema aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-105"
