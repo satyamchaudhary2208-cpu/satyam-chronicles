@@ -264,8 +264,9 @@ function Home() {
                       src={src}
                       alt="Street and documentary photograph by Satyam Chaudhary"
                       loading="lazy"
-                      className="img-cinema aspect-[3/4] w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
+                      className={`img-cinema ${
+  src === images.street2 ? "aspect-[3/4]" : "aspect-[4/3]"
+} w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]`}
                   </div>
                   <figcaption className="meta mt-3 text-muted-foreground">
                     Fig. {String(i + 2).padStart(2, "0")}
