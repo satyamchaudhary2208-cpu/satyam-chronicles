@@ -6,8 +6,9 @@ import street2 from "@/assets/street-2.jpg";
 import event1 from "@/assets/event-1.jpg";
 import theatre from "@/assets/theatre.jpg";
 import cagePoster from "@/assets/cage.png.asset.json";
+import lettersOfElsewherePoster from "@/assets/letters-of-elsewhere.png.asset.json";
 
-export const images = { still1, still2, still3, street1, street2, event1, theatre, cagePoster };
+export const images = { still1, still2, still3, street1, street2, event1, theatre, cagePoster, lettersOfElsewherePoster };
 
 export type Project = {
   slug: string;
@@ -92,7 +93,7 @@ export const projects: Project[] = [
     description:
       "Continued work in documentary cinematography — light, lenses, and the patience that long-form observational shooting asks for.",
     contributions: ["Camera assistance", "Lens and light support", "Field production"],
-    image: still1,
+    image: lettersOfElsewherePoster.url,
     size: "regular",
   },
   {
