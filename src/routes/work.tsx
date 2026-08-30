@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Reveal } from "@/components/reveal";
 import { eventWork, images, projects, type Project } from "@/data/portfolio";
+import streetFlags from "@/assets/street-flags.jpg.asset.json";
 
 export const Route = createFileRoute("/work")({
   head: () => ({
@@ -100,8 +101,8 @@ function Work() {
             </div>
             <div className="md:col-span-7 md:pt-16">
               <img
-                src={images.street2}
-                alt="Market street photograph"
+                src={streetFlags.url}
+                alt="Street vendor with Indian flags"
                 loading="lazy"
                 className="img-cinema aspect-[4/3] w-full object-cover"
               />
