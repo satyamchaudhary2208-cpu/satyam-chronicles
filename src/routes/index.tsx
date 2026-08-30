@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import portrait from "@/assets/portrait.jpg";
+import streetAhmedabad from "@/assets/street-ahmedabad.jpg.asset.json";
 import { Reveal } from "@/components/reveal";
 import { images, projects, services, skills } from "@/data/portfolio";
 
