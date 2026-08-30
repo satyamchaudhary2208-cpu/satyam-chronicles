@@ -27,7 +27,7 @@ const details = [
   {
     label: "Instagram",
     value: "@Satyamkasansaar",
-    href: "https://instagram.com/Satyamkasansaar",
+    href: "https://www.instagram.com/satyamkasansaar?igsi=eHowdDgzZWc3OGRt&utm_source=qr",
   },
   { label: "Based in", value: "Ahmedabad, India", href: null },
 ];

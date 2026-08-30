@@ -12,7 +12,7 @@ export function SiteFooter() {
         <div className="flex flex-col gap-3 md:items-end">
           <div className="flex gap-6">
             <a
-              href="https://instagram.com/Satyamkasansaar"
+            href="https://www.instagram.com/satyamkasansaar?igsi=eHowdDgzZWc3OGRt&utm_source=qr"
               target="_blank"
               rel="noreferrer"
               className="meta rule-link text-foreground"
