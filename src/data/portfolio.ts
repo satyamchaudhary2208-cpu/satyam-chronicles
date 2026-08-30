@@ -147,7 +147,7 @@ export const eventWork = [
     year: "2025",
     role: "Videographer",
     note: "Concert by MUKT band, Ahmedabad.",
-    image: event1,
+    image: mixtapeEvent.url,
   },
   {
     title: "SWASTIK LIVE",
