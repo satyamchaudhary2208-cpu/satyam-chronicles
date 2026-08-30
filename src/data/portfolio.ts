@@ -105,7 +105,7 @@ export const projects: Project[] = [
     description:
       "An experimental short about confinement that is chosen rather than imposed. His own film, start to finish — a first authored statement.",
     contributions: ["Writing", "Direction", "Visual concept"],
-    image: still3,
+    image: cagePoster.url,
     size: "tall",
   },
   {
