@@ -5,8 +5,9 @@ import street1 from "@/assets/street-1.jpg";
 import street2 from "@/assets/street-2.jpg";
 import event1 from "@/assets/event-1.jpg";
 import theatre from "@/assets/theatre.jpg";
+import cagePoster from "@/assets/cage.png.asset.json";
 
-export const images = { still1, still2, still3, street1, street2, event1, theatre };
+export const images = { still1, still2, still3, street1, street2, event1, theatre, cagePoster };
 
 export type Project = {
   slug: string;
