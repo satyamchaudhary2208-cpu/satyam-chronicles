@@ -11,6 +11,7 @@ import weddingPoster from "@/assets/Wedding.png.asset.json";
 import meraDostPoster from "@/assets/MeraDost.jpg.asset.json";
 import mixtapeEvent from "@/assets/mixtape-event.jpg.asset.json";
 import swastikLive from "@/assets/swastik-live.jpg.asset.json";
+import kartaalProject from "@/assets/kartaal-project.jpg.asset.json";
 import streetNew from "@/assets/streetnew1.jpg"; 
 
 export const images = { still1, still2, still3, street1, street2, streetNew, event1, theatre, cagePoster, lettersOfElsewherePoster, weddingPoster, meraDostPoster };
@@ -162,7 +163,7 @@ export const eventWork = [
     year: "2025",
     role: "Photography / Videography",
     note: "By Firoz Khan and the band, at Abhivykti City Arts Festival.",
-    image: theatre,
+    image: kartaalProject.url,
   },
 ];
 
