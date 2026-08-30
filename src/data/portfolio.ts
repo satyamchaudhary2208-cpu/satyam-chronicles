@@ -155,7 +155,7 @@ export const eventWork = [
     year: "2026",
     role: "Photographer / Videographer",
     note: "Concert by Swastik The Band.",
-    image: event1,
+    image: swastikLive.url,
   },
   {
     title: "The Kartaal Project",
