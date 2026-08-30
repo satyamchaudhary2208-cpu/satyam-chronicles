@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Reveal } from "@/components/reveal";
 import { eventWork, images, projects, type Project } from "@/data/portfolio";
 import streetFlags from "@/assets/street-flags.jpg.asset.json";
+import streetMonkey from "@/assets/street-monkey.jpg.asset.json";
 
 export const Route = createFileRoute("/work")({
   head: () => ({
