@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Reveal } from "@/components/reveal";
 import { eventWork, images, projects, type Project } from "@/data/portfolio";
 import streetFlags from "@/assets/street-flags.jpg.asset.json";
+import streetMonkey from "@/assets/street-monkey.jpg.asset.json";
 
 export const Route = createFileRoute("/work")({
   head: () => ({
@@ -108,12 +109,12 @@ function Work() {
               />
             </div>
             <div className="md:col-span-4">
-              <img
-                src={images.still3}
-                alt="Experimental photograph, hands on glass"
-                loading="lazy"
-                className="img-cinema aspect-[4/5] w-full object-cover"
-              />
+            <img
+              src={streetMonkey.url}
+              alt="Monkey silhouetted on overhead wires above a narrow Indian street"
+              loading="lazy"
+              className="img-cinema aspect-[4/5] w-full object-cover"
+            />
             </div>
             <div className="md:col-span-8">
               <img
