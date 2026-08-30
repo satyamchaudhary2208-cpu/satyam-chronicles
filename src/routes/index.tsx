@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import portrait from "@/assets/portrait.jpg";
+import streetAhmedabad from "@/assets/street-ahmedabad.jpg.asset.json";
 import { Reveal } from "@/components/reveal";
 import { images, projects, services, skills } from "@/data/portfolio";
 
@@ -256,7 +257,7 @@ function Home() {
             </div>
           </Reveal>
           <div className="mt-14 grid grid-cols-2 gap-4 md:grid-cols-4">
-            {[images.street1, images.street2, images.event1, images.still3].map((src, i) => (
+            {[images.street1, streetAhmedabad.url, images.event1, images.still3].map((src, i) => (
               <Reveal key={i} delay={i * 80}>
                 <figure className={`group relative ${i % 2 === 1 ? "md:translate-y-8" : ""}`}>
                   <div className="grain overflow-hidden">
