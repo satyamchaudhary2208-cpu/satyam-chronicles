@@ -7,8 +7,9 @@ import event1 from "@/assets/event-1.jpg";
 import theatre from "@/assets/theatre.jpg";
 import cagePoster from "@/assets/cage.png.asset.json";
 import lettersOfElsewherePoster from "@/assets/letters-of-elsewhere.png.asset.json";
+import weddingPoster from "@/assets/Wedding.png.asset.json";
 
-export const images = { still1, still2, still3, street1, street2, event1, theatre, cagePoster, lettersOfElsewherePoster };
+export const images = { still1, still2, still3, street1, street2, event1, theatre, cagePoster, lettersOfElsewherePoster, weddingPoster };
 
 export type Project = {
   slug: string;
