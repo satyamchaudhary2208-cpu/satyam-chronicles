@@ -93,7 +93,7 @@ export const projects: Project[] = [
     description:
       "Continued work in documentary cinematography — light, lenses, and the patience that long-form observational shooting asks for.",
     contributions: ["Camera assistance", "Lens and light support", "Field production"],
-    image: still1,
+    image: lettersOfElsewherePoster.url,
     size: "regular",
   },
   {
