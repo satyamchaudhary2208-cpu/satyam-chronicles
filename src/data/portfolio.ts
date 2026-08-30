@@ -120,7 +120,7 @@ export const projects: Project[] = [
     description:
       "An experimental documentary on marriage, shot, co-directed and cut by Satyam — the clearest example of his work across departments.",
     contributions: ["Co-direction", "Cinematography", "Editing"],
-    image: still2,
+    image: weddingPoster.url,
     size: "wide",
   },
   {
