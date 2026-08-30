@@ -10,6 +10,7 @@ import lettersOfElsewherePoster from "@/assets/letters-of-elsewhere.png.asset.js
 import weddingPoster from "@/assets/Wedding.png.asset.json";
 import meraDostPoster from "@/assets/MeraDost.jpg.asset.json";
 import mixtapeEvent from "@/assets/mixtape-event.jpg.asset.json";
+import swastikLive from "@/assets/swastik-live.jpg.asset.json";
 import streetNew from "@/assets/streetnew1.jpg"; 
 
 export const images = { still1, still2, still3, street1, street2, streetNew, event1, theatre, cagePoster, lettersOfElsewherePoster, weddingPoster, meraDostPoster };
@@ -154,7 +155,7 @@ export const eventWork = [
     year: "2026",
     role: "Photographer / Videographer",
     note: "Concert by Swastik The Band.",
-    image: event1,
+    image: swastikLive.url,
   },
   {
     title: "The Kartaal Project",
