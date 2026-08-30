@@ -93,7 +93,7 @@ function Work() {
           <div className="mt-14 grid grid-cols-2 gap-4 md:grid-cols-12 md:gap-6">
             <div className="md:col-span-5">
               <img
-                src={images.streetnew1}
+                src={images.streetNew}
                 alt="Street photograph, high contrast shadow"
                 loading="lazy"
                 className="img-cinema aspect-[3/4] w-full object-cover"
